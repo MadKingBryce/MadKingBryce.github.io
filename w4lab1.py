@@ -37,6 +37,9 @@ name2 = "Jack Howard"
 name3 = name + " " + name2
 print(name3)
 
+name4 = "Ci "
+name5 = "Ci"
+yourMom = name5 + name6;
 i = 0;
 sentence = "I am of age "
 age = "8"

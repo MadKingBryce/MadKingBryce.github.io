@@ -1,0 +1,23 @@
+<html>
+	<head><title>Week 7 lab 1</title></head>
+	<body>
+		<h1> Javascrtipt pic </h1>
+		<img id="theImage" onclick="toggle()" src="Assets/Images/bulboff.png">
+
+		<h2> Javascript questions </h2>
+		<ul>
+			<li> Validation is useful when having a login for a user </li>
+			<li> The onclick functin would run but not produce any results. This is becauseneither of the conditions in the if/else are met and thus the image will not change </li>
+		</ul>
+		<script type="text/javascript">
+			function toggle() {
+				var pic = document.getElementById("theImage")
+				if (pic.src.match("bulbon")) {
+					pic.src = "Assets/Images/bulboff.png"
+				} else if (pic.src.match("bulboff")) {
+					pic.src = "Assets/Images/bulbon.png"
+				}
+			}
+		</script>
+	</body>
+</html>

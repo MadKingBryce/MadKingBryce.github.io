@@ -30,8 +30,23 @@
 			<li> <a href="w5lab2.html"> Week 5 Lab 2 </a>
 			<li> <a href="w6lab1.html"> Week 6 Lab 1 </a>
 			<li> <a href="w6lab2.html"> Week 6 Lab 2 </a>
+			<li> <a href="w7lab1.html"> Week 7 lab 1 </a>
+
 
 		</ul>
+
+		<img src="Assets/Images/lk.png" id="theImage" onclick="toggle()">
+
+		<script type="text/javascript">
+			function toggle() {
+				var pic = document.getElementById("theImage")
+				if (pic.src.match("jk")) {
+					pic.src = "Assets/Images/lk.png"
+				} else if (pic.src.match("lk")) {
+					pic.src = "Assets/Images/jk.png"
+				}
+			}
+		</script>
 		<hr>
 		<h3> I101 Resources </h3>
 		<ol>

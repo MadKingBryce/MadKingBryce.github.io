@@ -1,0 +1,33 @@
+<html>
+	<head> <title> Week 7 lab 2</title> </head>
+	<body>
+		<h1> JavaScript Three </h1>
+
+		<p> enter a positive integer </p>
+		<input type="text" id="maxNum"/>
+		<input type="button" value="Count!" onclick="countUp()">
+		<br>
+		<span id="counter"> 0 </span>
+
+
+		<h1> JavaScript Questions </h1>
+		<ul>
+			<li> The first one sets a variable equal to the sum of two integers while the second creates a string "12". </li>
+			<li> First n would display the number three and the second would display "12"</li>
+			<li> The += operator sets the variable to the sum or concatination of itself and seccond variable</li>
+			<li> It was used to add a new line and number to the page</li>
+			<li> This question is phrased weird. Not gonna risk it</li>
+		</ul>
+
+	</body>
+
+	<script type="text/javascript">
+		function countUp() {
+			x = document.getElementById("counter").innerHTML() 
+			theNum = int(x);
+			theNum++;
+			x = theNum;
+
+		}
+	</script>
+</html>

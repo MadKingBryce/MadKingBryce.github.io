@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>I101 Home Page</title>
+	</head>
+	<body>
+		<h1> I101 Home Page </h2>
+		<center>
+			<img style="width:30%" src="Assets/Images/myImage.jpg"/> 
+			<br>
+			<img src="Assets/Images/myOtherImage.jpg"/> 
+		</center>
+		<h2> Brief Introduction </h2>
+		<p> I am <u>Bryce </u>. I like <strong>drums</strong> and stuff. <i>Brief</i></p>
+		<hr>
+		<h2> Introduction of the homepage </h2>
+		<p> Welp this is it. Its my homepage. Yay</p>
+		<hr>
+		<h2> Top of Bucket List </h2>
+		<p> Gotta go streaking at a football game. Why? Why not? If nothing else its a funny story to tell my kids </p>
+		<hr>
+		<h3> I101 Labs </h3>
+		<ul>
+			<li> <a href="w1lab2.html"> Week 1 Lab 2 </a> </li>
+			<li> <a href="w2lab1.html"> Week 2 Lab 1 </a> </li>
+			<li> <a href="w2lab2.html"> Week 2 Lab 2 </a> </li>
+			<li> <a href="w3lab2.html"> Week Three Lab 2.html </a> </li>
+			<li> <a href="w4lab1.html"> Week 4 Lab 1 </a> </li>
+			<li> <a href="w4lab2.html"> Week 4 Lab 2 </a> </li>
+			<li> <a href="w5lab2.html"> Week 5 Lab 2 </a> </li>
+			<li> <a href="w6lab1.html"> Week 6 Lab 1 </a> </li>
+			<li> <a href="w6lab2.html"> Week 6 Lab 2 </a> </li>
+			<li> <a href="w7lab1.html"> Week 7 lab 1 </a> </li>
+			<li> <a href="w7lab2.html"> Week 7 lab 2 </a> </li>
+			<li> <a href="w9lab1.html"> Week 9 lab 1 </a> </li>
+			<li> <a href="w9lab2.html"> Week 9 lab 2 </a></li>
+		</ul>
+
+		<img src="Assets/Images/lk.png" id="theImage" onclick="toggle()">
+
+		<script type="text/javascript">
+			function toggle() {
+				var pic = document.getElementById("theImage")
+				if (pic.src.match("jk")) {
+					pic.src = "Assets/Images/lk.png"
+				} else if (pic.src.match("lk")) {
+					pic.src = "Assets/Images/jk.png"
+				}
+			}
+		</script>
+		<hr>
+		<h3> I101 Resources </h3>
+		<ol>
+			<li> <a href="http://www.w3schools.com/"> W3 Schools </a>
+			<li> <a href="https://www.google.com/"> Google </a>
+			<li> <a href="http://stackoverflow.com/"> Stack Overflow </a>
+		</ol> 
+	</body>
+</html>

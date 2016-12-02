@@ -1,0 +1,60 @@
+body {
+    background: url("back.jpg");
+    background-attachment: fixed;
+    background-size: 100%;   
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: right;
+    font-size: 28px;
+    font-family: verdana;
+}
+
+li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+#filler {
+    height: 30px;
+    width: 100%;
+}
+#navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+#Header {
+    margin-left: 100px;
+    margin-right: 100px;
+    top: 40px;
+    font-size: 34pt;
+    font-family: verdana;
+}
+#Header h1 {
+    background: rgba(255, 255, 255, .8);
+}
+
+#mid {
+    margin-left: 100px;
+    font-size: 25pt;
+    margin-right: 100px;
+    background: rgba(255, 255, 255, .8);
+}
+#mid p {
+    margin-left: 30px;
+    margin-right: 30px;
+}

@@ -18,9 +18,11 @@
 	</div>
 	<div id="Header"> 
 		<div id="filler"> </div>
-		<center><h1> Solution </h1></center>
+		<center><h1> Presentation </h1></center>
 	</div>
-	
+	<center><img id="slide" src="ppt0.png"></center>
+	<button onclick="scrollLeft()">Left </button>
+	<button onclick="scrollRight()">Right </button>
 	<div id="mid"> 
 		<p>Within the website/app, there are multiple things that they can check on. There will be a timeline of events that the nonprofit hosts in which each member needs to check whether they are going or not. Since there are about 500 members and they are now trying to expand, there are discussion groups based on the specific events that the nonprofit hosts. If a member checks that they are going they are automatically put into a group where they can ask questions and talk to improve member engagement. For each event, there can be contact information for who is in charge of it. </p>
 		<br>
@@ -39,5 +41,30 @@
 		var current = document.getElementById("currentOne")
 		current.style.background = "rgba(255,255,255,.4)"
 	}
+
 	menuHighlight();
+	var pptAr = [];
+
+	function pptArray() {
+		var ppt = "ppt"
+		for (var i = 0; i < 18; i++) {
+			temp = ppt + i + ".png";
+
+			pptAr.push(temp)
+		}
+
+	}
+	var scroll = 0;
+
+	pptArray()
+	function scrollLeft() {
+		scroll = scroll - 1;
+		document.getElementById("slide").src = pptAr[scroll];
+	}
+	function scrollRight() {
+		scroll = scroll + 1;
+		document.getElementById("slide").src = pptAr[scroll];
+	}
+
+	
 </script>

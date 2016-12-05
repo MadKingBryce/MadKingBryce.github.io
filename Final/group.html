@@ -7,8 +7,9 @@
 <body>
 	<div id="navbar">
 		<ul id="navul">
-			<li><a href="group.html">The Team</a></li>
-			<li><a href="resume.html">Solution</a></li>
+			<li><a href="presentation.html"> Presentation </a></li>
+			<li id="currentOne"><a href="group.html">The Team</a></li>
+			<li><a href="solution.html">Solution</a></li>
 			<li><a href="data.html">Data</a></li>
 			<li><a href="research.html">Research</a></li>
   			<li><a href="index.html">Home</a></li>
@@ -23,19 +24,19 @@
 	<center> <hr width="75%"> </center>
 	<div id="pics">
 		<div id="one">
-			<img src="Amelia.jpeg" width="75%" height="75%">
+			<a href="http://pages.iu.edu/~dahma/home.html"><img src="Amelia.jpeg" width="75%" height="75%"> </a>
 			<div id="mid">
 				<p> AMELIA </p>
 			</div>
 		</div>
 		<div id="two">
-			<img src="Grayson.jpeg" width="75%" height="75%">
+			<a href="http://pages.iu.edu/~grbennet/individual.html"><img src="Grayson.jpeg" width="75%" height="75%"></a>
 			<div id="mid">
 				<p> GRAYSON </p>
 			</div>
 		</div>
 		<div id="one">
-			<img src="me.jpg" width="50%" height="50%" transform="rotate(90deg)">
+			<a href="http://pages.iu.edu/~greenebj/Homepage/homepage.html"><img src="me.jpg" width="50%" height="50%" transform="rotate(90deg)"></a>
 			<div id="mid">
 				<p> BRYCE </p>
 			</div>
@@ -43,3 +44,12 @@
 	</div>
 </body>
 </html>
+<script type="text/javascript">
+	function menuHighlight() {
+		var page = window.location.href
+		console.log(window.location.href)
+		var current = document.getElementById("currentOne")
+		current.style.background = "rgba(255,255,255,.4)"
+	}
+	menuHighlight();
+</script>

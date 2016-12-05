@@ -7,10 +7,11 @@
 <body>
 	<div id="navbar">
 		<ul id="navul">
+			<li><a href="presentation.html"> Presentation </a></li>
 			<li><a href="group.html">The Team</a></li>
-			<li><a href="resume.html">Solution</a></li>
+			<li><a href="solution.html">Solution</a></li>
 			<li><a href="data.html">Data</a></li>
-			<li><a href="research.html">Research</a></li>
+			<li id="currentOne"><a href="research.html">Research</a></li>
   			<li><a href="index.html">Home</a></li>
 		</ul>
 	</div>
@@ -26,3 +27,12 @@
 
 </body>
 </html>
+<script type="text/javascript">
+	function menuHighlight() {
+		var page = window.location.href
+		console.log(window.location.href)
+		var current = document.getElementById("currentOne")
+		current.style.background = "rgba(255,255,255,.4)"
+	}
+	menuHighlight();
+</script>
